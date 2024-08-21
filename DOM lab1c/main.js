@@ -1,8 +1,24 @@
 let comments = [];
 let tagNames = [];
 let challenge = [];
+let challenge1 = [];
 const mainDOM = document.querySelector("main");
 console.log(mainDOM.childNodes);
+// function childSearch(element) {
+//     element.childNodes.forEach(element => {
+//     if (element.nodeType!=1)
+//     {
+//         return
+//     }
+//     if (element.childNodes.length<1)
+//     {
+//         challenge1.push(element);
+//     }
+//     else element.childNodes.forEach(element2=>{
+//         childSearch(element2)
+//     })   
+//     })
+// }
 mainDOM.childNodes.forEach(element => {
     console.log(element.nodeType)
     if(element.nodeType === 8)
@@ -27,3 +43,5 @@ mainDOM.childNodes.forEach(element => {
 console.log(comments)
 console.log(tagNames)
 console.log(challenge)
+// childSearch(mainDOM);
+// console.log(challenge1)
